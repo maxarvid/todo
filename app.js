@@ -10,5 +10,11 @@ const createTodo = (task) => {
 let btn = document.querySelector("button");
 btn.onclick = () => {
   let input = document.getElementById("new-task").value;
+  createTodo(input);
   alert(`I have been clicked, input is: ${input}`);
 };
+
+const renderTodo = () => {
+  const ul = document.createElement('ul')
+  ul.setAttribute('id', 'todos')
+}
